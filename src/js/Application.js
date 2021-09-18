@@ -14,14 +14,13 @@ export default class Application extends EventEmitter {
   }
   init() {
     const article = document.querySelector('.article');
-    article.addEventListener('click', () => {
+    article.addEventListener('click', 
       anime({
         targets: '.spring-physics-demo .el',
         translateX: 250,
         direction: 'alternate',
         loop: true,
         easing: 'spring(1, 80, 10, 0)'
-      });
-    })
+      })); 
   }
 }
