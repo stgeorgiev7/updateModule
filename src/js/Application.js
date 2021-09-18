@@ -16,7 +16,7 @@ export default class Application extends EventEmitter {
     const article = document.querySelector('.article');
     article.addEventListener('click', 
       anime({
-        targets: '.spring-physics-demo .el',
+        targets: '.article',
         translateX: 250,
         direction: 'alternate',
         loop: true,
