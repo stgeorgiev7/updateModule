@@ -13,8 +13,8 @@ export default class Application extends EventEmitter {
     this.emit(Application.events.READY);
   }
   init() {
-    
-    document.querySelector('.article').addEventListener('click', () => {
+    const article = document.querySelector('.article');
+    article.addEventListener('click', () => {
       anime({
         targets: '.spring-physics-demo .el',
         translateX: 250,
