@@ -13,7 +13,7 @@ export default class Application extends EventEmitter {
     this.emit(Application.events.READY);
   }
   init() {
-    document.querySelector('article').addEventListener('click', 
+    document.querySelector("article").addEventListener("click", 
       anime({
         targets: '.article',
         translateX: 250,
